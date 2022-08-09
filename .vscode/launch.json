@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "f:/github/CPP_Repository/IfElse",
-      "program": "f:/github/CPP_Repository/IfElse/build/Debug/outDebug",
+      "cwd": "f:/github/CPP_Repository/BreakAndContinue",
+      "program": "f:/github/CPP_Repository/BreakAndContinue/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
