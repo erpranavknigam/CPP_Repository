@@ -1,0 +1,1 @@
+{"name":"Local: record_breaker","url":"f:\\github\\CPP_Repository\\Array\\ArrayChallenges\\record_breaker.cpp","tests":[{"id":1660754483726,"input":"8\n1 2 0 7 2 0 2 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\github\\CPP_Repository\\Array\\ArrayChallenges\\record_breaker.cpp","group":"local","local":true}
