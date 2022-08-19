@@ -30,6 +30,7 @@
   ],
   "files.associations": {
     "*.php": "php",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "iostream": "cpp"
   }
 }
