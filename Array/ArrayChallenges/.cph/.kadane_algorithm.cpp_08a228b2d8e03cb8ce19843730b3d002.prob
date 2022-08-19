@@ -1,0 +1,1 @@
+{"name":"Local: kadane_algorithm","url":"f:\\github\\CPP_Repository\\Array\\ArrayChallenges\\kadane_algorithm.cpp","tests":[{"id":1660919253251,"input":"5\n-1 4 -6 7 -4","output":"7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\github\\CPP_Repository\\Array\\ArrayChallenges\\kadane_algorithm.cpp","group":"local","local":true}
