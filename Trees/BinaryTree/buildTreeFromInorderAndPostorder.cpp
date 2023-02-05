@@ -1,5 +1,4 @@
 #include<iostream>
-
 using namespace std;
 
 struct Node{
@@ -22,7 +21,6 @@ int search(int in[], int start, int end, int curr){
     }
     return -1;
 }
-
 void inorderPrint(Node* root){
     if(root == NULL){
         return;
@@ -31,29 +29,29 @@ void inorderPrint(Node* root){
     cout << root->data << " ";
     inorderPrint(root->right);
 }
-Node* buildTree(int pre[], int in[], int start, int end){
-    static int idx = 0;
-
+Node* buildTree(int post[], int in[], int start, int end){
+    static int idx = 4;
     if(start > end){
         return NULL;
     }
-    int curr = pre[idx];
-    idx++;
-    Node* node = new Node(curr);
+
+    int val = post[idx];
+    idx--;
+    Node* node = new Node(val);
     if(start == end){
         return node;
     }
-    int pos = search(in, start, end, curr);
-    node->left = buildTree(pre,in,start,pos-1);
-    node->right = buildTree(pre,in,pos+1,end);
+    int pos = search(in,start,end, val);
+    node->right = buildTree(post,in,pos+1,end);
+    node->left = buildTree(post,in,start,pos-1);
 
     return node;
+
 }
 int main(){
-    int pre[] = {1,2,4,3,5};
+    int post[] = {4,2,5,3,1};
     int in[] = {4,2,1,5,3};
 
-    Node* root = buildTree(pre,in,0,4);
-    inorderPrint(root);
-
+    Node* node = buildTree(post,in,0,4);
+    inorderPrint(node);
 }
